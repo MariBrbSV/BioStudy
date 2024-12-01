@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ciclo Celular</title>
+
+    <!-- Style CSS -->
+    <style>
+      .lista li a {
+        color: black !important;
+      }
+
+      .banner-text {
+        color: white;
+      }
+
+      .fundo {
+        background: rgb(21, 121, 9);
+        background: linear-gradient(
+          90deg,
+          rgba(21, 121, 9, 1) 20%,
+          rgba(54, 255, 13, 1) 100%
+        );
+      }
+
+      .banner img {
+        width: 150px !important;
+        height: auto !important;
+      }
+
+      .banner-celular {
+        /* max-width: 1120px; */
+        /* height: 60vh; */
+        margin: 0 auto;
+        padding: 0rem 2rem;
+        gap: 6rem;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .banner-conteudo {
+        /* organizandoo conteudo em coluna */
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .principal img {
+        width: 300px !important;
+        height: auto !important;
+      }
+
+      footer {
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      .img-card {
+        width: 200px !important;
+        height: auto !important;
+      }
+
+      html {
+        scroll-behavior: smooth !important;
+      }
+      
+      .card {
+        word-wrap: break-word; /* Quebra palavras longas */
+        overflow-wrap: anywhere; /* Faz o texto quebrar antes de ultrapassar os limites */
+        max-width: 100% !important; /* Limita a largura do card */
+      }
+
+      .card-body {
+        padding: 1rem; /* Espaçamento interno */
+      }
+
+      .card-title {
+        font-size: 1.25rem; /* Tamanho ajustável para o título */
+        white-space: normal; /* Garante que o texto não será exibido em uma única linha */
+      }
+    </style>
+
+    <!-- Link Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    
+  </head>
+  <body>
+    <header>
+      <nav class="navbar justify-content-center">
+        <ul class="nav lista">
+          <li class="nav-item">
+            <a href="" class="nav-link">BioStudy</a>
+          </li>
+
+
+        </ul>
+        <ul class="nav nav-underline lista">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../Landing Page.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#transcricao"
+              >Transcrição e Especialização</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fases">Fases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mitose">Mitose</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#meiose">Meiose</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sobre o Ciclo Celular -->
+    <main>
+      <div class="banner-celular">
+        <section class="fundo p-3 rounded d-flex">
+          <header class="banner-conteudo">
+            <div class="w-75">
+              <h3 class="banner-text">Ciclo Celular</h3>
+              <p class="banner-text">
+                Ciclo celular é o período de vida da célula, que tal como as
+                pessoas, também nascem, crescem e se reproduzem. Esse ciclo é
+                muito importante, pois a todo o momento há células se
+                reproduzindo.
+              </p>
+            </div>
+          </header>
+          <div class="banner">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/9708/9708604.png"
+              alt=""
+            />
+          </div>
+        </section>
+      </div>
+
+      <!-- Transcrição e especialização celular (relação) -->
+      <section
+        class="d-flex align-items-center justify-content-around mt-3 banner"
+        id="transcricao"
+      >
+        <div class="bg-success-rgb d-flex flex-column w-50 p-3 gap-4">
+          <h2 class="text-center">Transcrição e Especialização Celular:</h2>
+          <span
+            >A transcrição atua como o mecanismo regulatório central para a
+            especialização celular. Ao controlar quais genes são expressos em
+            cada tipo de célula, ela permite que células com o mesmo DNA
+            desenvolvam estruturas e funções distintas, formando a base para a
+            diversidade celular essencial para a vida complexa.</span
+          >
+          <!-- <a href="" class="btn btn-outline-success w-25">Saiba Mais </a> -->
+        </div>
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/015/280/601/original/hand-drawn-genes-and-dna-illustration-png.png"
+          alt=""
+        />
+      </section>
+
+      <!-- Fases ciclo celular -->
+      <section
+        class="d-flex align-items-center justify-content-around w-100 mt-4 banner principal"
+        id="fases"
+      >
+        <img
+          src="https://www.thermofisher.com/tw/zt/home/life-science/cell-analysis/flow-cytometry/flow-cytometry-assays-reagents/cell-cycle-assays-flow-cytometry/_jcr_content/MainParsys/image_b29d/backgroundimg.img.jpg/1655832551280.jpg"
+          alt=""
+          class="w-50"
+        />
+        <div class="d-flex flex-column w-50 p-3 gap-4">
+          <h2 class="text-center">Fases do Ciclo Celular:</h2>
+          <span
+            >As fases do ciclo celular são organizadas em duas grandes etapas:
+            Interfase (preparação para a divisão) e Fase Mitótica (M) (divisão
+            celular).</span
+          >
+          <!-- <a href="" class="btn btn-outline-success w-25">Saiba Mais</a> -->
+        </div>
+      </section>
+
+      <!-- Cards Fase ciclo celular -->
+      <div class="m-4 p-3">
+        <h3>Fases:</h3>
+      </div>
+      <div
+        class="d-flex align-items-center flex-wrap p-3 m-4 mt-3 banner principal"
+      >
+        <div class="row">
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">1° Interfase</h5>
+                <p class="card-text">
+                  É a fase mais longa do ciclo celular, dedicada ao crescimento,
+                  replicação do DNA e preparação para a divisão.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">2° Fase G1 (Gap 1)</h5>
+                <p class="card-text">
+                  A célula cresce e realiza funções metabólicas normais. Síntese
+                  de proteínas e organelas essenciais. Avaliação de condições
+                  externas e internas para decidir se a célula prosseguirá para
+                  a próxima fase. Ponto de controle G1: Verifica tamanho
+                  celular, nutrientes, sinais externos e integridade do DNA.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">3° Fase S (Síntese)</h5>
+                <p class="card-text">
+                  Ocorre a replicação do DNA, duplicando os cromossomos. Cada
+                  cromossomo é formado por duas cromátides-irmãs conectadas pelo
+                  centrômero. Centrossomos (estruturas que ajudam na formação do
+                  fuso mitótico) também são duplicados.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">4° Fase G2 (Gap 2)</h5>
+                <p class="card-text">
+                  Crescimento adicional da célula. Síntese de proteínas
+                  específicas para a divisão, como tubulina para formar o fuso
+                  mitótico. Ponto de controle G2: Verifica se o DNA foi
+                  replicado corretamente e se a célula está pronta para a
+                  divisão.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">5° Fase M (Mitose)</h5>
+                <p class="card-text">
+                  É a fase em que ocorre a divisão celular. É composta por dois
+                  processos principais: mitose (divisão do núcleo) e citoquinese
+                  (divisão do citoplasma).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mitose -->
+      <section
+        class="d-flex align-items-center justify-content-around mt-3 banner principal"
+        id="mitose"
+      >
+        <div class="bg-success-rgb d-flex flex-column w-50 p-3 gap-4">
+          <h2 class="text-center">Mitose:</h2>
+          <span
+            >A mitose é um processo de divisão celular em que uma célula mãe se
+            divide para formar duas células-filhas geneticamente idênticas, com
+            a mesma quantidade de DNA e o mesmo número de cromossomos. É
+            essencial para o crescimento, reparação de tecidos e reprodução
+            assexuada em organismos multicelulares.</span
+          >
+          <!-- <a href="" class="btn btn-outline-success w-25">Saiba Mais</a> -->
+        </div>
+        <img
+          src="https://www.preparaenem.com/upload/conteudo/images/2019/03/fases-mitose-ao.jpg"
+          alt=""
+        />
+      </section>
+
+      <!-- Cards Mitose -->
+      <div
+        class="d-flex align-items-center flex-wrap p-3 m-4 mt-3 banner principal"
+      >
+        <div class="row">
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">1° Prófase</h5>
+                <p class="card-text">
+                  Os cromossomos, que estavam descompactados (cromatina),
+                  tornam-se condensados e visíveis ao microscópio. O núcleo
+                  começa a se desintegrar, e o envelope nuclear desaparece. Os
+                  centrossomos migram para os polos opostos da célula, formando
+                  fibras do fuso mitótico.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">2° Prometáfase</h5>
+                <p class="card-text">
+                  O envelope nuclear desaparece completamente. Os cromossomos
+                  conectam-se às fibras do fuso mitótico por meio de estruturas
+                  chamadas cinetocoros.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">3° Metáfase</h5>
+                <p class="card-text">
+                  Os cromossomos alinham-se no plano equatorial da célula,
+                  conhecido como placa metafásica. Essa organização garante que
+                  a distribuição dos cromossomos seja precisa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">4° Anáfase</h5>
+                <p class="card-text">
+                  As cromátides irmãs de cada cromossomo são separadas e puxadas
+                  para os polos opostos da célula pelas fibras do fuso.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">5° Telófase</h5>
+                <p class="card-text">
+                  Os cromossomos nos polos opostos começam a se descondensar,
+                  retornando à forma de cromatina. Um novo envelope nuclear se
+                  forma ao redor de cada conjunto de cromossomos, formando dois
+                  núcleos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meiose -->
+      <section
+        class="d-flex align-items-center justify-content-around w-100 mt-4 banner principal"
+        id="meiose"
+      >
+        <img
+          src="https://www.preparaenem.com/upload/conteudo/images/2019/03/fases-meiose-ao(1).jpg"
+          alt=""
+          class="w-50"
+        />
+        <div class="d-flex flex-column w-50 p-3 gap-4">
+          <h2 class="text-center">Meiose::</h2>
+          <span
+            >A meiose é um processo de divisão celular que reduz pela metade o
+            número de cromossomos, produzindo células haploides (com um conjunto
+            de cromossomos), a partir de uma célula diploide (com dois conjuntos
+            de cromossomos). Este processo é fundamental para a formação de
+            gametas (óvulos e espermatozoides) em organismos que se reproduzem
+            sexualmente.</span
+          >
+          <!-- <a href="" class="btn btn-outline-success w-25">Saiba Mais</a> -->
+        </div>
+      </section>
+
+      <!-- Cards Meiose -->
+      <div class="m-4 p-3">
+        <h3>Meiose I</h3>
+      </div>
+      <div
+        class="d-flex align-items-center justify-content-center flex-wrap p-3 m-4 mt-3 banner principal"
+      >
+        <div class="row">
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">1° Prófase I</h5>
+                <p class="card-text">
+                  Os cromossomos homólogos se pareiam (formando tétrades) em um
+                  processo chamado sinapse. Ocorre o crossing-over, onde
+                  segmentos de DNA são trocados entre cromátides de cromossomos
+                  homólogos. O envelope nuclear se dissolve, e o fuso mitótico
+                  começa a se formar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">2° Metáfase I</h5>
+                <p class="card-text">
+                  Os pares de cromossomos homólogos se alinham na placa
+                  metafásica. O alinhamento é aleatório, promovendo a segregação
+                  independente.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">3° Anáfase I</h5>
+                <p class="card-text">
+                  Os cromossomos homólogos são separados e puxados para os polos
+                  opostos da célula. Diferente da mitose, as cromátides-irmãs
+                  permanecem unidas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">4° Telófase I e Citoquinese:</h5>
+                <p class="card-text">
+                  A célula se divide em duas células-filhas haploides. Cada
+                  célula possui metade dos cromossomos, mas cada cromossomo
+                  ainda é composto por duas cromátides.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards Meiose II -->
+      <div class="m-4 p-3">
+        <h3>Meiose II</h3>
+      </div>
+      <div
+        class="d-flex align-items-center flex-wrap p-3 m-4 mt-3 banner principal"
+      >
+        <div class="row">
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">1° Prófase II</h5>
+                <p class="card-text">
+                  Os cromossomos se condensam novamente, e o envelope nuclear
+                  desaparece. O fuso mitótico se forma.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">2° Metáfase II</h5>
+                <p class="card-text">
+                  Os cromossomos se alinham na placa metafásica.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">3° Anáfase II</h5>
+                <p class="card-text">
+                  As cromátides-irmãs são separadas e movidas para polos opostos
+                  da célula.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">4° Telófase II e Citoquinese:</h5>
+                <p class="card-text">
+                  Cada célula se divide, resultando em quatro células-filhas
+                  haploides, geneticamente diferentes entre si.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diferença de Mitose e Meiose -->
+      <div class="m-4 p-3">
+        <h3 class="modal-title">Diferença de Mitose e Meiose</h3>
+      </div>
+      <div class="m-4 p-3">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Características</th>
+              <th scope="col">Mitose</th>
+              <th scope="col">Meiose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Número de divisões</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Número de células-filhas</td>
+              <td>2</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Geneticamente idênticas?</td>
+              <td>Sim</td>
+              <td>Não</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Número de cromossomos</td>
+              <td>Conservado (2n)</td>
+              <td>Reduzido (n)</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Função</td>
+              <td>Crescimento e reparo</td>
+              <td>Reprodução sexual</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="banner-celular mt-4 mb-4">
+        <section class="align-items-center fundo p-3 rounded d-flex">
+          <div class="banner">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/9708/9708604.png"
+              alt=""
+            />
+          </div>
+          <header class="banner-conteudo">
+            <div class="w-75">
+              <h4 class="banner-text">Sobre o Ciclo Celular</h4>
+              <span class="banner-text"
+                >O ciclo celular é o processo pelo qual a célula cresce, duplica
+                seu material genético e se divide, permitindo o crescimento, a
+                renovação e a reprodução de organismos. Ele é composto por uma
+                sequência ordenada de eventos que garantem a formação de duas
+                células-filhas a partir de uma célula-mãe.</span
+              >
+            </div>
+          </header>
+        </section>
+      </div>
+    </main>
+    <footer class="text-center bg-black text-light p-2">
+      <p>Desenvolvido por Lucas Gomes</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

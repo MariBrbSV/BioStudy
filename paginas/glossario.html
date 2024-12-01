@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossário</title>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.add('hidden'));
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: "Raleway";
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .logo {
+            height: 100px;
+            margin-right: 70px;
+        }
+
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        h1 {
+            font-family: 'Poppins', Arial, sans-serif;
+            font-size: 24px;
+            margin: 0;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #424242;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: all 0.4s;
+        }
+
+        nav a:hover {
+            background: #4CAF50;
+        }
+
+        h2 {
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        h2:hover {
+            color: #4CAF50;
+        }
+
+
+        section {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 17px;
+            background: #333;
+            position: fixed;
+            color: white;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .card {
+            background: white;
+            border: #4CAF50 1px solid;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Estilo para o botão no header */
+        .voltar {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: 'Poppins', Arial, sans-serif;
+            color: white;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.4s ease;
+        }
+
+        .voltar:hover {
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../img/1.png" alt="Logo" class="logo">
+        <h1>Glossário</h1>
+        <a href="../Landing Page.html" class="voltar">Voltar à Página Inicial</a>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('codons')">Códons</a>
+        <a href="#" onclick="showSection('anti-codons')">Anti-Códons</a>
+        <a href="#" onclick="showSection('splicing')">Splicing</a>
+        <a href="#" onclick="showSection('especializacao-celular')">Especialização-Celular</a>
+        <a href="#" onclick="showSection('plodia')">Plodia</a>
+        <a href="#" onclick="showSection('genoma')">Genoma</a>
+    </nav>
+
+    <!-- Seção codons -->
+    <section id="codons">
+        <h2>O Que são Códons?</h2>
+        <p>Códons são sequências de três nucleotídeos no RNA mensageiro (mRNA) que correspondem a um aminoácido específico
+            ou a um sinal de parada durante a síntese de proteínas. 
+            Eles formam a base do código genético,
+            que é usado pelas células para traduzir informações genéticas armazenadas no DNA em proteínas funcionais.</p>
+        <div class="card">
+            <h2>Características principais:</h2>
+            <p> <strong> Trincas de nucleotídeos: </strong> <br>
+                Cada códon é formado por três bases nitrogenadas: <br> (adenina - A, uracila - U, citosina - C, ou guanina - G no RNA). <br>
+                Exemplo: AUG, UUU, GGC.</p>
+
+            <p> <strong> Função na tradução proteica: </strong> <br>
+                Durante a tradução, os ribossomos leem os códons no mRNA. <br>
+                Cada códon especifica qual aminoácido deve ser adicionado à cadeia proteica.
+            </p>
+
+            <p> <strong> Códons de parada:</strong> <br>
+                Existem três códons que sinalizam o fim da tradução: UAA, UAG e UGA. Eles não codificam aminoácidos.
+            </p>
+            
+            <p> <strong> Código genético degenerado:</strong> <br>
+                Muitos aminoácidos são codificados por mais de um códon. <br> <strong> Por exemplo: </strong> tanto UUU quanto UUC codificam a fenilalanina.
+            </p>
+
+        </div>
+
+        <div class="card">
+            <h2>Papel na Biologia Molecular:</h2>
+            <P>Os códons são essenciais para garantir que as proteínas sejam sintetizadas corretamente, 
+                com os aminoácidos na ordem certa. 
+                Alterações nos códons (como mutações) podem levar a mudanças na sequência de aminoácidos, 
+                podendo causar doenças ou alterações funcionais nas proteínas.</P>
+        </div>
+    </section>
+
+    <!-- Seção Anti-codons -->
+    <section id="anti-codons" class="hidden">
+        <h2>Definição de Anti-códons</h2>
+        <p>Os anticódons são sequências de três nucleotídeos presentes no RNA transportador (tRNA) 
+            que são complementares aos códons do RNA mensageiro (mRNA). 
+            Eles desempenham um papel crucial no processo de tradução, 
+            garantindo que os aminoácidos corretos sejam adicionados à cadeia proteica em formação.</p>
+        <ul>
+            <li>Ribose (um açúcar)</li>
+            <li>Fosfato</li>
+            <li>Bases nitrogenadas: adenina (A), guanina (G), citosina (C) e uracila (U)</li>
+        </ul>
+        <div class="card">
+            <h2>Características principais:</h2>
+            <p>O RNA é composto por nucleotídeos formados por ribose, fosfato e bases nitrogenadas.</p>
+
+            <p> <strong> Estrutura complementar: </strong> <br>
+               Cada anticódon no tRNA é complementar a um códon específico do mRNA. <br>
+            <strong>Exemplo: </strong> <br>
+            Códon no mRNA: AUG <br>
+            Anticódon correspondente no tRNA: UAC
+            </p>
+
+            <p> <strong> Função na tradução: </strong> <br>
+                O anticódon do tRNA reconhece e se emparelha com o códon correspondente no mRNA durante a tradução.
+                <br>O tRNA também transporta o aminoácido especificado pelo códon, que será incorporado à cadeia proteica.
+             </p>
+
+             <div class="card">
+             <h2><strong> Resumo: </strong></h2>
+             <p>
+                Os anticódons atuam como "adaptadores" durante a síntese de proteínas, 
+                ligando as informações do mRNA aos aminoácidos transportados pelos tRNAs. 
+                Eles asseguram a precisão do processo de tradução no ribossomo.
+             </p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- Seção splicing -->
+    <section id="splicing" class="hidden">
+        <h2>Definição:</h2>
+        <p>O splicing é um processo na biologia molecular em que as partes "não úteis"
+             de um RNA mensageiro (mRNA) recém-formado, chamadas de ítrons, são removidas, enquanto as partes "úteis",
+              chamadas de éxons, são unidas. Isso ocorre antes que o mRNA esteja pronto para ser usado na produção de proteínas.</p>
+        <div class="card">
+            <h2>Por que o Splicing é importante?</h2>
+            <p>Quando o DNA é transcrito em RNA, ele gera um RNA chamado pré-mRNA,
+                 que contém tanto éxons quanto ítrons. Como os ítrons não têm informações para a produção de proteínas,
+                  eles precisam ser retirados. O splicing garante que o mRNA final contenha apenas as informações necessárias
+                para produzir uma proteína funcional.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Resumo:</h2>
+            <p>O splicing é como editar um texto: você remove as partes irrelevantes (ítrons) e junta as partes importantes (éxons) 
+            para criar uma mensagem clara e útil (o mRNA maduro).</p>
+        </div>
+    </section>
+
+    <!-- Seção especialização celular -->
+    <section id="especializacao-celular" class="hidden">
+        <h2>Definindo a Especialização Celular:</h2>
+        <p>A <span style="color: #4CAF50;"><b> especialização celular</b> </span> é o processo pelo qual as células de um organismo se tornam diferentes umas das outras
+             e passam a desempenhar funções específicas.
+              Isso acontece porque cada tipo de célula "ativa" apenas algumas partes do DNA,
+               produzindo proteínas específicas para sua função.</p>
+        <h2 style="color: #4CAF50;"><b>Como funciona a especialização celular?</b></h2>
+        <ul>
+            <li><strong>Células-tronco:</strong> Todas as células de um organismo multicelular começam iguais (células-tronco). 
+                Elas têm o potencial de se transformar em qualquer tipo de célula.
+            </li>
+            <li><strong>Diferenciação:</strong> Durante o desenvolvimento do organismo, essas células recebem "instruções" químicas ou 
+                sinais do ambiente que as fazem ativar certos genes e desativar outros.
+                 Isso determina em que tipo de célula elas se transformarão.</li>
+            <li><strong>Funções específicas:</strong> Após a especialização, cada tipo de célula realiza uma tarefa específica. Por Exemplo:</li>
+            <ul>
+                <li> <span style="color: #4CAF50;"><strong>Células musculares</strong> </span> ajudam no movimento.</li>
+                <li > <span style="color: #4CAF50;"><strong>Células nervosas</strong></span> transmitem informações.</li>
+                <li><span style="color: #4CAF50;"><strong> Células sanguíneas </strong></span>transportam oxigênio.</li>
+            </ul>
+            <li><strong>Organização no organismo:</strong> Células especializadas se organizam em tecidos (como o tecido muscular),
+                 que formam órgãos (como o coração),
+                 e esses órgãos trabalham juntos nos sistemas do corpo (como o sistema circulatório).</li>
+        </ul>
+        <div class="card">
+            <h2 style="color: #4CAF50;">Resumo:</h2>
+            <p>A especialização celular é o processo que transforma células simples em especialistas no que fazem, 
+                como trabalhadores em uma fábrica, onde cada um tem sua tarefa essencial para o funcionamento geral.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Plodia -->
+    <section id="plodia" class="hidden">
+        <h2>Definindo a Plodia:</h2>
+        <p>Na biologia, a <span style="color: #4CAF50;"><strong>ploidia</strong></span> se refere ao número de conjuntos de cromossomos 
+            que uma célula possui.
+             Os cromossomos contêm o material genético (DNA) e estão organizados em pares ou conjuntos.
+        </p>
+        <h2 style="color: #4CAF50;">Tipos principais de ploidia:</h2>
+        <ul>
+            <li> Haploide (n): Células com apenas um conjunto de cromossomos.</li>
+            <ul>
+                <li style="color: #4CAF50;"><strong>Exemplos:</strong></li>
+                <li>Gametas (espermatozoides e óvulos) em humanos</li> 
+                <li>Células de alguns organismos, como fungos.</li> 
+            </ul>
+            <li>Diploide (2n): Células com dois conjuntos de cromossomos, um vindo do pai e outro da mãe.</li>
+            <ul>
+                <li style="color: #4CAF50;"><strong>Exemplos:</strong></li>
+                <li>A maioria das células do corpo humano (somáticas).</li> 
+                <li>Plantas e animais geralmente são diploides na maior parte de sua vida.</li> 
+            </ul>
+            <li>Poliploide (3n, 4n, etc.): Células com mais de dois conjuntos de cromossomos.</li>
+            <ul>
+                <li style="color: #4CAF50;"><strong>Exemplos:</strong></li>
+                <li>Algumas plantas, como trigo e morangos, podem ser poliploides.</li> 
+                <li>Raramente ocorre em animais, mas é comum em plantas e organismos unicelulares.</li> 
+            </ul>
+        </ul>
+        <div class="card-container">
+            <div class="card">
+                <h2>Resumo:</h2>
+                <p>A <span style="color: #4CAF50;"> ploidia</span> indica quantos conjuntos de cromossomos uma célula possui. Pense assim:</p>
+                <p>Haploide = 1 cópia de cada cromossomo (como um "livro")</p>
+                <p>Diploide = 2 cópias (um livro da mãe e outro do pai)</p>
+                <p>Poliploide = mais de 2 cópias (uma biblioteca com vários exemplares!)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="genoma" class="hidden">
+        <h2>Definindo o Genoma:</h2>
+        <p>O <strong style="color: #4CAF50;"> genoma </strong> é todo o material genético de um organismo. Ele contém as instruções completas para o funcionamento, crescimento, 
+            desenvolvimento e reprodução de um ser vivo. Essas instruções estão armazenadas no DNA (ou RNA, em alguns vírus).</p>
+        <h2 style="color: #4CAF50;">O que compõe o genoma?</h2>
+        <ul>
+            <li><strong style="color: #4CAF50;">Genes:</strong> São pequenos pedaços do DNA que contêm informações para produzir proteínas, 
+                que desempenham funções importantes no organismo.</li>
+                <ul>
+                    <li style="color: #4CAF50;"><strong>Exemplo:</strong></li>
+                    <li> Um gene pode determinar a cor dos olhos.</li>
+                </ul>
+                <li><strong style="color: #4CAF50;">DNA não codificante:</strong> Nem todo o DNA tem genes que produzem proteínas.
+                    Algumas partes têm outras funções, como regular a atividade dos genes.</li>
+        </ul>
+        <h2>Onde está o genoma?</h2>
+        <ul>
+            <li><strong style="color: #4CAF50;">Em células eucarióticas (como as nossas):</strong> O genoma está no núcleo da célula, 
+                organizado em cromossomos.</li>
+            <li><strong style="color: #4CAF50;">Em células procarióticas (bactérias):</strong>O genoma está no citoplasma, 
+                em uma molécula circular de DNA.</li>
+            
+        </ul>
+        <div class="card-container">
+            <div class="card">
+                <h2>Resumo:</h2>
+                <p>O genoma é como um "manual de instruções" completo que define como um organismo é e funciona.
+                     Ele contém todas as informações necessárias para construir e manter um ser vivo.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <br><br>
+    <footer>
+        <p>© 2024 - by Vinícius Surlo</p>
+    </footer>
+</body>
+
+</html>
